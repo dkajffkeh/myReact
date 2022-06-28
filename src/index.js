@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import CommentList from "./chapter_05/CommentList";
 import NotificationList from "./chapter_06/NotificationList";
+import Counter from "./Chapter_07/Counter";
 
 /*const root = createRoot(document.getElementById('root'));
 root.render(<App />);*/
@@ -30,7 +31,7 @@ ReactDOM.render(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <NotificationList/>
+        <Counter/>
     </React.StrictMode>
 );
 
