@@ -13,9 +13,6 @@ const Counter = (() => {
         console.log(string);
     })
 
-    useEffect(() => {
-        alert("마운트");
-    })
 
 
     return (
