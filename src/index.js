@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Counter from "./Chapter_07/Counter";
 import MeasureExample from "./Chapter_07/MeasureExample";
+import Accommodate from "./Chapter_07/Accommodate";
 
 /*const root = createRoot(document.getElementById('root'));
 root.render(<App />);*/
@@ -28,10 +29,15 @@ ReactDOM.render(
 );
 */
 
+// Chapter 3 CustomHook
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-        <Counter/>
+        <Accommodate/>
 );
+
+
+// Chapter 7 CustomHook
 
 
 
