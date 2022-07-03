@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import LandingPage from "./Chaptor_09/LandingPage";
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
 import FormExpression from "./Chaptor_10/FormExpression";
 
 /*const root = createRoot(document.getElementById('root'));
@@ -32,7 +36,11 @@ ReactDOM.render(
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-        <FormExpression/>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/chapter/9" element={<FormExpression/>}/>
+            </Routes>
+        </BrowserRouter>
 );
 
 
