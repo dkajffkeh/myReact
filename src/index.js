@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import CommentList from "./chapter_05/CommentList";
-import NotificationList from "./chapter_06/NotificationList";
+import LandingPage from "./Chaptor_09/LandingPage";
 
 /*const root = createRoot(document.getElementById('root'));
 root.render(<App />);*/
@@ -28,11 +27,16 @@ ReactDOM.render(
 );
 */
 
+// Chapter 3 CustomHook
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-        <NotificationList/>
-    </React.StrictMode>
+        <LandingPage/>
 );
+
+
+
+// Chapter 7 CustomHook
 
 
 

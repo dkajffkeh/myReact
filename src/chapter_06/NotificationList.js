@@ -5,13 +5,13 @@ let timer;
 
 const reservedNotifications = [
     {
-        message:"1",
+        message:"안녕",
     },
     {
-        message:"2",
+        message:"오늘",
     },
     {
-        message:"3",
+        message:"점심",
     }
 ];
 
@@ -45,9 +45,11 @@ class NotificationList extends React.Component {
     render() {
         return (
             <div>
-                {
-                    this.state.notifications.map((notification) => {
-                        return <Notification message={notification.message}/>;
+                {this.state.notifications.map((notification) => {
+                        return <Notification
+                            key={notification.id}
+                            id={notification.id}
+                            message={notification.message}/>;
                     })
                 }
             </div>
