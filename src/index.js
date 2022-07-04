@@ -7,7 +7,12 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import FormExpression from "./Chaptor_10/FormExpression";
+import FormExpression from "./Chapter_10/FormExpression";
+import Accommodate from "./Chapter_07/Accommodate";
+import Clock from "./chapter_04/Clock";
+import Calculator from "./Chapter_12/TemperatureCalculator";
+import ProfileCard from "./Chapter_13/ProfileCard";
+import UpperComponent from "./Practice/UpperComponent";
 
 /*const root = createRoot(document.getElementById('root'));
 root.render(<App />);*/
@@ -38,7 +43,12 @@ ReactDOM.render(
 ReactDOM.createRoot(document.getElementById('root')).render(
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={<Clock/>} />
+                <Route path="/chapter/8" element={<Accommodate/>} />
                 <Route path="/chapter/9" element={<FormExpression/>}/>
+                <Route path="/chapter/11" element={<Calculator/>}/>
+                <Route path="/chapter/13" element={<ProfileCard/>} />
+                <Route path="/practice" element={<UpperComponent/>} />
             </Routes>
         </BrowserRouter>
 );
