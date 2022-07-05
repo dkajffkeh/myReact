@@ -13,6 +13,7 @@ import Clock from "./chapter_04/Clock";
 import Calculator from "./Chapter_12/TemperatureCalculator";
 import ProfileCard from "./Chapter_13/ProfileCard";
 import UpperComponent from "./Practice/UpperComponent";
+import SampleBoard from "./Board/SampleBoard";
 
 /*const root = createRoot(document.getElementById('root'));
 root.render(<App />);*/
@@ -48,7 +49,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/chapter/9" element={<FormExpression/>}/>
                 <Route path="/chapter/11" element={<Calculator/>}/>
                 <Route path="/chapter/13" element={<ProfileCard/>} />
-                <Route path="/practice" element={<UpperComponent/>} />
+                <Route path="/board/test" element={<SampleBoard/>} />
             </Routes>
         </BrowserRouter>
 );
