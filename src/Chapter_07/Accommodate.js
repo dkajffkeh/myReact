@@ -20,7 +20,6 @@ export default function Accommodate() {
 
           <button onClick={increaseCount} disabled={isFull}>입장</button>
           <button onClick={decreaseCount}>퇴장</button>
-
           {isFull && <p style={{color:'red'}}>정원이 가득찼습니다.</p>}
       </div>
     );

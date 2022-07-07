@@ -14,6 +14,8 @@ import Calculator from "./Chapter_12/TemperatureCalculator";
 import ProfileCard from "./Chapter_13/ProfileCard";
 import UpperComponent from "./Practice/UpperComponent";
 import SampleBoard from "./Board/SampleBoard";
+import ObjectHandler from "./ObjectTest/ObjectHandler";
+import InputBoxDebug from "./InputBoxTest/InputBoxDebbug";
 
 /*const root = createRoot(document.getElementById('root'));
 root.render(<App />);*/
@@ -50,6 +52,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/chapter/11" element={<Calculator/>}/>
                 <Route path="/chapter/13" element={<ProfileCard/>} />
                 <Route path="/board/test" element={<SampleBoard/>} />
+                <Route path="/object/test" element={<ObjectHandler/>} />
+                <Route path="/object/debug" element={<InputBoxDebug/>} />
             </Routes>
         </BrowserRouter>
 );
