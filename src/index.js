@@ -16,6 +16,7 @@ import UpperComponent from "./Practice/UpperComponent";
 import SampleBoard from "./Board/SampleBoard";
 import ObjectHandler from "./ObjectTest/ObjectHandler";
 import InputBoxDebug from "./InputBoxTest/InputBoxDebbug";
+import StateTestFun from "./State/State";
 
 /*const root = createRoot(document.getElementById('root'));
 root.render(<App />);*/
@@ -54,6 +55,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/board/test" element={<SampleBoard/>} />
                 <Route path="/object/test" element={<ObjectHandler/>} />
                 <Route path="/object/debug" element={<InputBoxDebug/>} />
+                <Route path="/state/test" element={<StateTestFun/>} />
             </Routes>
         </BrowserRouter>
 );
