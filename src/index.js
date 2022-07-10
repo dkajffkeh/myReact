@@ -42,7 +42,7 @@ ReactDOM.render(
 */
 
 // Chapter 3 CustomHook
-
+// Provider redux 사용법 스터디
 
 ReactDOM.createRoot(document.getElementById('root')).render(
         <BrowserRouter>
