@@ -2,49 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-} from "react-router-dom";
+import {BrowserRouter, Route, Routes,} from "react-router-dom";
 import FormExpression from "./Chapter_10/FormExpression";
 import Accommodate from "./Chapter_07/Accommodate";
 import Clock from "./chapter_04/Clock";
 import Calculator from "./Chapter_12/TemperatureCalculator";
 import ProfileCard from "./Chapter_13/ProfileCard";
-import UpperComponent from "./Practice/UpperComponent";
 import SampleBoard from "./Board/SampleBoard";
 import ObjectHandler from "./ObjectTest/ObjectHandler";
 import InputBoxDebug from "./InputBoxTest/InputBoxDebbug";
-import StateTestFun from "./State/State";
-
-/*const root = createRoot(document.getElementById('root'));
-root.render(<App />);*/
-
-/*setInterval(() => {
-    ReactDOM.render(
-        <React.StrictMode>
-            <Clock />
-        </React.StrictMode>,
-        document.getElementById('root')
-    )
-}, 1000);*/
-/*
-function Welcome(props){
-    return <h1>안녕, {props.name}</h1>
-}
-
-const element = <Welcome name="리엑트"/>;
-ReactDOM.render(
-    element,
-    document.getElementById('root')
-);
-*/
-
-// Chapter 3 CustomHook
-// Provider redux 사용법 스터디
+import {Provider} from "react-redux";
+import {createStore} from "redux";
+import counterReducer from "./redux/rootReducer";
+import {store} from "./redux/store";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+    <Provider store={store}>
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Clock/>} />
@@ -55,9 +28,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path="/board/test" element={<SampleBoard/>} />
                 <Route path="/object/test" element={<ObjectHandler/>} />
                 <Route path="/object/debug" element={<InputBoxDebug/>} />
-                <Route path="/state/test" element={<StateTestFun/>} />
             </Routes>
         </BrowserRouter>
+    </Provider>
 );
 
 
